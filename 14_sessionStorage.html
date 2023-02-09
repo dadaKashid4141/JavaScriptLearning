@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Session storage</title>
+</head>
+
+<body>
+  <h3>Understanding session storage</h3>
+  <script>
+    window.sessionStorage.setItem("Sachin", "Mumbai")
+    window.sessionStorage.setItem("Rohit", "Sangola")
+
+    window.sessionStorage.setItem("Emran", "pune")
+
+    window.sessionStorage.setItem("kashi", "pandharpur");
+    console.log(window.sessionStorage);
+    console.log("getItem used for kashi");
+    console.log(window.sessionStorage.getItem("kashi"));
+
+    (window.sessionStorage.removeItem("Emran"));
+    console.log("remove item'Emran'");
+    console.log(window.sessionStorage);
+
+    console.log("finding length");
+    console.log(window.sessionStorage.length);
+
+    window.sessionStorage.clear();
+    console.log(`After clear length: ${window.sessionStorage.length}`);
+
+  </script>
+</body>
+
+</html>
