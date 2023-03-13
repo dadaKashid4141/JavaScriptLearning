@@ -41,6 +41,28 @@ var add=function() {
 }
 add();
 
+console.log('================================mult ======================');
+function mult(params) {
+  multiplication=1;
+  for(let index=1;index<=10;index++){
+    multiplication=multiplication*index;
+  }
+  console.log('multiplication  of 10:',multiplication);
+}
+mult();
+
+
+console.log('-----------------------square upto 10 ---------------------');
+ function sq(){
+  sq=1;
+  for(let i=1;i<=10;i++){
+    var sq=i*i;
+  
+    console.log(`square of ${i}=${sq}`);
+  }
+ }
+ sq();
+
 console.log("=========================Q4=====================");
 function sqr() {
     var count1=0;
@@ -52,6 +74,7 @@ function sqr() {
     
 }
 sqr();
+
 console.log("=========================Q5.1=====================");
 function evenPositionedChars(string) {
       var result="";

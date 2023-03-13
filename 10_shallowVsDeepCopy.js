@@ -4,6 +4,7 @@ console.log(abc);
 
 
 let frdName=myname;
+
 frdName="Anil";
 myname="Sachin";
 console.log(frdName,myname);

@@ -14,6 +14,8 @@ console.log(fruits_seasonal);
 console.log("---------------------------------4)add pineapple at last-----------------------------");
 fruits_seasonal.splice(5,0,"pineapple")
 console.log(fruits_seasonal);
+// fruits_seasonal.push('pineapple')
+// console.log(fruits_seasonal);
 console.log("---------------------------------5)add dragon fruit before watermelon-----------------------------");
 fruits_seasonal.splice(4,0,"Dragon Fruit")
 console.log(fruits_seasonal);

@@ -78,3 +78,4 @@ console.log(array_numbers.includes(115));
 console.log("--------------------11)check 23 is  available or not----------------------")
 console.log(array_numbers.includes(23));
 
+

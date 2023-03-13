@@ -1,83 +1,37 @@
-let variable_name = "Pune";
+let arr = [1,2,3,2,3,4,5,6,7,5,6,8];
+// uniq=[];
 
-const mohitPerson =  {
-    fullName: "Sachin Tendulkar",
-    age: 42,
-    "isMarried": true
-}
-
-console.log(Object.entries(mohitPerson));
-console.log(Object.keys(mohitPerson));
-console.log(Object.values(mohitPerson));
-
-let person = {
-    fullName: "Sachin Tendulkar",
-    age: 42,
-    "isMarried": true,
-    address: {                                         //nested obj
-        street: "AS CLUB",
-        pin_code : 123456,
-        city: "PUNE",
-        state : "MH"
-    },
-    // eat:function(){
-    //     console.log("I am vegetarian");
-    // },
-    // walk: function() {
-    //     console.log("I do walk everyday");
-    // },
-    details: function(){
-        let personDetails =  `Details are : ${this.fullName}, ${this.age},  ${this.address.city}`;
-        return personDetails;
-    }
-}
-
-
-let pDetail = person.details();
-console.log(person.details());
-console.log("==================");
-console.log(typeof person);
-console.log(person.address);
-console.log(person.address.street);
-person.address.landmark = "Near Main Road";
-
-person.eat();
-
-person.fullName = 'Sachin Ramesh Tendulkar';
-person.pinCode = 123456;
-
-delete person.age;
-
-person.profession = "Angular Developer";
-
-console.log(person);
-
-console.log(person.city);
-console.log(person["age"]);
-
-let personFullName = person.fullName;
-console.log(personFullName);
-console.log(person.fullName);
-
-
-
-
-//fabo series
-function fabo(myNumber) {
-    if (myNumber == 0) {
-        return 0;
-    }
-    if( myNumber == 1) {
-        return 1;
-    }
-    let fN = 0; sN=1; nextN = fN + sN;
+// for (let i = 0; i < arr.length; i++) {
+//     ck=arr[i];
+//    if(uniq.includes(ck)){
+//     continue
+//    }else{
+//     uniq.push(ck);
+//    }
     
-    for (let index = 0; index < myNumber; index++) {
-        fN = sN;
-        sN = nextN;
-        nextN = fN + sN;
-        console.log(nextN);
+// }
+// console.log("new array:",uniq);
+
+// newArray=[...new Set(arr)];
+    
+console.log('by using set',[...new Set(arr)]);   //Removing duplicate by using set method
+
+emt=[];
+for (const i of arr) {
+    if (emt.includes(i)) {
+        continue
+    }else{
+        emt.push(i)
     }
 }
+console.log("using includes:",emt);
 
-fabo(5);
+
+a=[];
+for(i=0;i<arr.length;i++){
+    if(a.indexOf(arr[i])==-1){
+        a.push(arr[i])
+    
+    }
+}
+console.log('using indexOf prop:',a);
