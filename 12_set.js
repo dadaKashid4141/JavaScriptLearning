@@ -42,12 +42,15 @@ for (const element of setOfNumbers) {
     console.log(element);
 }
 
-console.log("====== remove duplicate =======");
+console.log("====== remove duplicate using set=======");
 
 let arrayNumbers=[1,1,2,2,3,3,3,4,4,5,5,6,8];
 console.log('given array:',arrayNumbers);
 let arrayUniqueElements=[...new Set(arrayNumbers)];
 console.log('remove duplicate using set:',arrayUniqueElements);
+
+
+console.log("-----------remove duplicate using indexOf------------");
 uni=[];
 dupli=[];
 for (let i of arrayNumbers) {
@@ -95,3 +98,5 @@ console.log('--------sort---------');
 sorted= arrayNum.sort();
 console.log(sorted);
 console.log('larg:',arrayNum[arrayNum.length-1]);
+
+
